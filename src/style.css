@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.PortfolioSection {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 60px;
+}
+
+#AboutSection {
+  min-height: 100vh;
+  background: url(/images/Portland_Office_3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #d7ebff;
+}
+
+.aboutSectionName {
+  height: 40vh;
+  padding-top: 150px;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
+
+.aboutSectionJobTitle {
+  color: #656e79;
+}
+
+.aboutSectionDescription {
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: large;
+}
+
+@media screen and (min-width: 1000px) {
+  .aboutSectionDescription {
+    text-align: justify;
+  }
+}
+
+#SkillsSection {
+  min-height: 100vh;
+  background-color: white;
+  color: #303030;
+}
+
+#WorkSection {
+  min-height: 100vh;
+  background-color: #303030;
+  color: white;
+}
