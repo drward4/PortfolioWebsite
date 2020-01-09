@@ -1,0 +1,54 @@
+.projectContainer {
+  box-sizing: border-box;
+  width: 400px;
+  height: 350px;
+  margin: 20px;
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+}
+
+.projectTitle {
+  width: 100%;
+  text-align: center;
+  font-size: x-large;
+  padding: 10px 0px 10px 0px;
+}
+
+.projectImage {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
+
+.projectDescription {
+  padding: 20px;
+}
+
+.projectLinksContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.projectLink {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 100%;
+  background-color: #c0c0c0;
+}
+
+.projectLinkIcon {
+  width: 24px;
+  height: 36px;
+  margin: auto;
+  font-size: 24px;
+  text-align: center;
+  color: #262120;
+}
+
+.projectLinkHidden {
+  display: none;
+}

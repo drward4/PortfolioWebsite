@@ -5,8 +5,10 @@ import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "jquery/dist/jquery.slim.js";
+import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
 import "./style.css";
+import "./components/Project.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

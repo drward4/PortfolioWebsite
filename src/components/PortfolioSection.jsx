@@ -7,7 +7,12 @@ class PortfolioSection extends Component {
 
     return (
       <div id={this.props.id} className="PortfolioSection">
-        <div className="container">{this.props.children}</div>
+        <div className="container">
+          <div className="SectionTitle">
+            <h3>{this.props.title}</h3>
+          </div>
+          {this.props.children}
+        </div>
       </div>
     );
   }
