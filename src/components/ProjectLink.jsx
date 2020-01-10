@@ -3,15 +3,15 @@ import React, { Component } from "react";
 class ProjectLink extends Component {
   render() {
     return (
-      <a href={this.props.link} target="_blank">
+      <a href={this.props.link} target="_blank" rel="noopener noreferrer">
         <div
           className={
             this.props.link === "" || typeof this.props.link === "undefined"
-              ? "projectLinkHidden"
-              : "projectLink"
+              ? "project-link-hidden"
+              : "project-link"
           }
         >
-          <div className="projectLinkIcon">
+          <div className="project-link-icon">
             <i className={"fa " + this.props.faClass}></i>
           </div>
         </div>

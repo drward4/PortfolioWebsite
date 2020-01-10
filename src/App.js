@@ -3,13 +3,15 @@ import PortfolioSection from "./components/PortfolioSection";
 
 import "./App.css";
 import Project from "./components/Project";
+import Skill from "./components/Skill";
+import SkillsGroup from "./components/SkillsGroup";
 
 function App() {
   return (
-    <div>
+    <div id="top">
       <header>
         <nav className="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-          <a className="navbar-brand mr-auto" href="#">
+          <a className="navbar-brand mr-auto" href="#top">
             DANIEL WARD
           </a>
 
@@ -30,8 +32,8 @@ function App() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#SkillsSection">
-                  SKILLS
+                <a className="nav-link" href="#ExperienceSection">
+                  EXPERIENCE
                 </a>
               </li>
               <li className="nav-item">
@@ -44,26 +46,30 @@ function App() {
         </nav>
       </header>
       <main>
-        <PortfolioSection id="AboutSection" sectionClass="AboutSection">
-          <div className="aboutSectionName">
-            <h1>DANIEL WARD</h1>
-            <h4 className="aboutSectionJobTitle">SOFTWARE DEVELOPER</h4>
-          </div>
-          <div className="aboutSectionDescription">
-            <p>
-              Hi! I'm a Software Developer with a broad range of experience
-              working in both front and back-end development. I create apps,
-              games, and websites, among other things. I'm currently looking for
-              new opportunities with a focus on either cross-platform mobile or
-              full stack web development.
-            </p>
+        <PortfolioSection id="AboutSection">
+          <div className="container">
+            <div className="about-section-name">
+              <h1>DANIEL WARD</h1>
+              <h4 className="about-section-job-title">SOFTWARE DEVELOPER</h4>
+            </div>
+            <div className="about-section-description">
+              <p>
+                Hi! I'm a Software Developer with a broad range of experience
+                working in both front and back-end development. I create apps,
+                games, and websites, among other things. I'm currently looking
+                for new opportunities with a focus on either cross-platform
+                mobile or full stack web development.
+              </p>
+            </div>
           </div>
         </PortfolioSection>
-        <PortfolioSection id="SkillsSection">
-          <div className="skillContainer"></div>
+        <PortfolioSection id="ExperienceSection" title="EXPERIENCE">
+          <div className="experience-container">
+            <SkillsGroup />
+          </div>
         </PortfolioSection>
-        <PortfolioSection id="WorkSection" title="WORK AND PROJECTS">
-          <div className="ProjectsGroupContainer">
+        <PortfolioSection id="WorkSection" title="WORK / PROJECTS">
+          <div className="projects-group-container">
             <Project
               id="XenonMoon"
               title="Xenon Moon"
@@ -128,7 +134,11 @@ function App() {
               </p>
               <p>
                 An online demo version can be played &nbsp;
-                <a target="_blank" href="https://dantimus.itch.io/zasaword">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://dantimus.itch.io/zasaword"
+                >
                   here
                 </a>
                 .
@@ -180,7 +190,11 @@ function App() {
               <p>
                 Lost Soul is a game I created from scratch in a single weekend
                 for the &nbsp;
-                <a target="_blank" href="https://ldjam.com/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ldjam.com/events/ludum-dare/38"
+                >
                   Ludum Dare 38
                 </a>
                 &nbsp; competition. The theme for this event, which was my also
@@ -193,6 +207,7 @@ function App() {
                 The game can be downloaded &nbsp;
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://drive.google.com/drive/folders/0BwLDm2tvRGtwRjgzWXpNNXNSRHc"
                 >
                   here
@@ -212,7 +227,11 @@ function App() {
               <p>
                 Untitled Song is a game I created from scratch in a single
                 weekend for the &nbsp;
-                <a target="_blank" href="https://ldjam.com/">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://ldjam.com/events/ludum-dare/45"
+                >
                   Ludum Dare 45
                 </a>
                 &nbsp; competition. The theme was "Start With Nothing". My idea
@@ -224,6 +243,7 @@ function App() {
                 The game can be played &nbsp;
                 <a
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://dantimus.itch.io/untitled-song"
                 >
                   here
@@ -247,6 +267,11 @@ function App() {
             </Project>
           </div>
         </PortfolioSection>
+        <div id="FooterSection">
+          <a href="#top">
+            <i className="fa fa-arrow-circle-up"></i>
+          </a>
+        </div>
       </main>
     </div>
   );

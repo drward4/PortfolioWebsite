@@ -2,13 +2,11 @@ import React, { Component } from "react";
 
 class PortfolioSection extends Component {
   render() {
-    //let classString = "PortolioSection " + this.props.sectionClass;
-    //console.log(this.props);
-
     return (
-      <div id={this.props.id} className="PortfolioSection">
-        <div className="container">
-          <div className="SectionTitle">
+      <div id={this.props.id}>
+        <div className="portfolio-section-spacer"></div>
+        <div className="portfolio-section">
+          <div className="section-title">
             <h3>{this.props.title}</h3>
           </div>
           {this.props.children}

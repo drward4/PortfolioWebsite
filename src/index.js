@@ -9,6 +9,7 @@ import "font-awesome/css/font-awesome.min.css";
 import "./index.css";
 import "./style.css";
 import "./components/Project.css";
+import "./components/Skill.css";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

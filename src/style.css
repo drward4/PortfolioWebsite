@@ -2,20 +2,36 @@ html {
   scroll-behavior: smooth;
 }
 
+.navbar {
+  font-size: 1.5em;
+}
+
+.navbar-dark {
+  background-color: #262120 !important;
+}
+
+.nav-item {
+  padding-right: 50px;
+}
+
 .modal-dialog {
   color: #000000;
 }
 
-.PortfolioSection {
+.portfolio-section-spacer {
+  height: 52px;
+}
+
+.portfolio-section {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
-.SectionTitle {
+.section-title {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -29,7 +45,7 @@ html {
   color: #d7ebff;
 }
 
-.aboutSectionName {
+.about-section-name {
   height: 40vh;
   padding-top: 150px;
   padding-left: 20%;
@@ -37,55 +53,61 @@ html {
   text-align: center;
 }
 
-.aboutSectionJobTitle {
+.about-section-job-title {
   color: #656e79;
 }
 
-.aboutSectionDescription {
+.about-section-description {
   padding-left: 20%;
   padding-right: 20%;
-  font-size: large;
+  font-size: 1.5em;
 }
 
 @media screen and (min-width: 1000px) {
-  .aboutSectionDescription {
+  .about-section-description {
     text-align: justify;
   }
 }
 
 @media screen and (max-width: 999px) {
-  .aboutSectionName {
+  .about-section-name {
     padding-top: 120px;
   }
 
-  .aboutSectionDescription {
+  .about-section-description {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
-#SkillsSection {
+#ExperienceSection {
   min-height: 100vh;
   background-color: white;
   color: #303030;
 }
 
-#WorkSection {
-  /* background: url(/images/Portland_Office_3.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  background-image: linear-gradient(to top right, #47423d, #8f7c5b);
-  color: white;
+#WorkSection .portfolio-section {
+  background-image: linear-gradient(to top right, #a0978e, #f3ece1);
+  color: black;
 }
 
-.ProjectsGroupContainer {
+.projects-group-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
+  justify-content: center;
 }
 
-.navbar-dark {
-  background-color: #262120 !important;
+#FooterSection {
+  height: 100px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #262120;
+  font-size: 3em;
+}
+
+#FooterSection i {
+  color: white;
 }

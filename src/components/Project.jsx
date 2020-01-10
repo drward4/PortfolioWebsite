@@ -6,16 +6,16 @@ class Project extends Component {
     let modalID = this.props.id + "Modal";
 
     return (
-      <div>
+      <div className="project-wrapper">
         <div
-          className="projectContainer"
+          className="project-container"
           data-toggle="modal"
           data-target={"#" + modalID}
         >
-          <div className="projectTitle">{this.props.title}</div>
+          <div className="project-title">{this.props.title}</div>
           <div>
             <img
-              className="projectImage"
+              className="project-image"
               src={this.props.imgSrc}
               alt={this.props.imgAlt}
             />
@@ -23,7 +23,7 @@ class Project extends Component {
         </div>
 
         <div id={modalID} className="modal fade" role="dialog">
-          <div className="modal-dialog">
+          <div className="modal-dialog project-modal">
             <div className="modal-content">
               <div className="modal-header">
                 <h4 className="modal-title">{this.props.title}</h4>
@@ -34,15 +34,15 @@ class Project extends Component {
               <div className="modal-body">
                 <div>
                   <img
-                    className="projectImage"
+                    className="project-image"
                     src={this.props.imgSrc}
                     alt={this.props.imgAlt}
                   />
                 </div>
-                <div className="projectDescription">{this.props.children}</div>
+                <div className="project-description">{this.props.children}</div>
               </div>
               <div className="modal-footer">
-                <div className="projectLinksContainer">
+                <div className="project-links-container">
                   <ProjectLink
                     id="Facebook"
                     faClass="fa-facebook"
