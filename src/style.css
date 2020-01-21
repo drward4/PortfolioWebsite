@@ -86,6 +86,14 @@ html {
   color: #303030;
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  justify-content: center;
+  margin: auto;
+}
+
 #WorkSection .portfolio-section {
   background-image: linear-gradient(to top right, #a0978e, #f3ece1);
   color: black;
