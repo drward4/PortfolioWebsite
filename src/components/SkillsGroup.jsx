@@ -45,7 +45,11 @@ class SkillsGroup extends Component {
     return (
       <div className="skills-container">
         {this.state.skills.map(skill => (
-          <Skill title={skill.title} imageSrc={"/images/" + skill.imageSrc} />
+          <Skill
+            key={skill.title}
+            title={skill.title}
+            imageSrc={"/images/" + skill.imageSrc}
+          />
         ))}
       </div>
     );

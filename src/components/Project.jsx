@@ -8,10 +8,15 @@ class Project extends Component {
     return (
       <div className="project-wrapper">
         <div
-          className="project-container"
+          className="project-overlay"
           data-toggle="modal"
           data-target={"#" + modalID}
         >
+          <div className="project-overlay-contents">
+            <i className="fa fa-search"></i>
+          </div>
+        </div>
+        <div className="project-container">
           <div className="project-title">{this.props.title}</div>
           <div>
             <img
