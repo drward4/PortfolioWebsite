@@ -48,8 +48,8 @@ function App() {
         <PortfolioSection id="AboutSection">
           <div className="container">
             <div className="about-section-name">
-              <h1>DANIEL WARD</h1>
-              <h4 className="about-section-job-title">SOFTWARE DEVELOPER</h4>
+              <div>DANIEL WARD</div>
+              <div className="about-section-job-title">SOFTWARE DEVELOPER</div>
             </div>
             <div className="about-section-description">
               <p>
@@ -60,6 +60,14 @@ function App() {
                 mobile or full stack web development.
               </p>
             </div>
+            <div className="about-section-links">
+              <a href="https://github.com/drward4">
+                <i className="fa fa-github about-section-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/daniel-ward-64299b139/">
+                <i className="fa fa-linkedin about-section-link"></i>
+              </a>
+            </div>
           </div>
         </PortfolioSection>
         <PortfolioSection id="ExperienceSection" title="EXPERIENCE">
@@ -69,7 +77,8 @@ function App() {
               studying Computer Science at Rutgers Universty. In recent years
               I've been doing freelance work, mainly in cross-platform mobile
               development using Unity and C#. I've also previously worked at
-              major corporations such as Johnson &amp; Johnson and MetLife.
+              major corporations such as Johnson &amp; Johnson and MetLife,
+              mainly creating internal applications with ASP.Net and SQL.
             </div>
             <div>
               <h4>TECHNOLOGIES I'VE WORKED WITH:</h4>
@@ -89,6 +98,7 @@ function App() {
               youTubeLink=""
               gitHubLink=""
               externalLink=""
+              techList="Unity, C#, Blender, Photoshop"
             >
               <p>
                 Xenon Moon is a 3D action / exploration game I'm creating with
@@ -106,6 +116,7 @@ function App() {
               imgAlt="JamSpring"
               facebookLink="https://www.facebook.com/JamSpringNetwork"
               youTubeLink="https://www.youtube.com/watch?v=A3bEDSrtLi4"
+              techList="Unity, C#, Photoshop"
             >
               <p>
                 JamSpring was a guitar / music app I created with several others
@@ -116,11 +127,9 @@ function App() {
               <p>
                 Key Features include: Multi-track Recording Studio; Automatic
                 Key Detection; Interactive Virtual Guitar; Chord Progression
-                Generator; Style Based Suggestionss for Progressions, Chords,
-                and Scales; Email based Colloboration with other JamSpring
-                Users.
+                Generator; Style Based Suggestions for Progressions, Chords, and
+                Scales; Email based Colloboration with other JamSpring Users.
               </p>
-              <p></p>
             </Project>
 
             <Project
@@ -130,6 +139,7 @@ function App() {
               imgAlt="Zasaword"
               youTubeLink="https://www.youtube.com/watch?v=NtImPglQvGY"
               externalLink="https://dantimus.itch.io/zasaword"
+              techList="Objective C (Originally), Unity, C#, Photoshop"
             >
               <p>
                 Zasaword was an original word game for the iPhone which featured
@@ -164,12 +174,18 @@ function App() {
               youTubeLink=""
               gitHubLink=""
               externalLink=""
+              techList="Objective C, SQLite, ASP.Net, MySQL, HTML / JS / CSS, Photoshop, Blender"
             >
               <p>
                 Master Diagnostician Series was a set of medical training apps
                 on which I collaborated. I developed the front-end and the mid
                 tier controllers, as well as a data entry website which allowed
                 our clients to easily enter and maintain their own data.
+              </p>
+              <p>
+                The platform was designed such that entirely new apps could be
+                generated simply by swapping out the database and changing a few
+                images.
               </p>
             </Project>
 
@@ -179,10 +195,11 @@ function App() {
               imgSrc="/images/LotusBlissYoga.jpg"
               imgAlt="Lotus Bliss Yoga"
               externalLink="http://lotusblissyoga.com/default.htm"
+              techList="HTML, CSS, Bootstrap, PHP"
             >
               <p>
                 I was hired to convert this website from an auto-generated HTML
-                mess to simple HTML / CSS. I also incorporated Bootstrap to make
+                mess to simple HTML / CSS. I also incorporated Bootstrap, made
                 it responsive, and created a new PHP contact form which uses
                 reCAPTCHA.
               </p>
@@ -195,6 +212,7 @@ function App() {
               imgAlt="Lost Soul"
               gitHubLink="https://github.com/drward4/LudumDare38"
               externalLink="https://ldjam.com/events/ludum-dare/38/lost-soul"
+              techList="Unity, C#, Blender, Photoshop"
             >
               <p>
                 Lost Soul is a game I created from scratch in a single weekend
@@ -232,6 +250,7 @@ function App() {
               imgAlt="Ludum Dare 45: Untitled Song"
               gitHubLink="https://github.com/drward4/LudumDare45"
               externalLink="https://ldjam.com/events/ludum-dare/45/untitled-song"
+              techList="Unity, C#, Blender, Photoshop"
             >
               <p>
                 Untitled Song is a game I created from scratch in a single
@@ -261,6 +280,7 @@ function App() {
               </p>
             </Project>
 
+            {/* 
             <Project
               id="Template"
               title="Template"
@@ -271,9 +291,11 @@ function App() {
               youTubeLink=""
               gitHubLink=""
               externalLink=""
+              techList=""
             >
               <p>Template</p>
-            </Project>
+            </Project> 
+            */}
           </div>
         </PortfolioSection>
         <div id="FooterSection">

@@ -47,40 +47,45 @@ class Project extends Component {
                 <div className="project-description">{this.props.children}</div>
               </div>
               <div className="modal-footer">
-                <div className="project-links-container">
-                  <ProjectLink
-                    id="Facebook"
-                    faClass="fa-facebook"
-                    link={this.props.facebookLink}
-                  />
-                  <ProjectLink
-                    id="Twitter"
-                    faClass="fa-twitter"
-                    link={this.props.twitterLink}
-                  />
-                  <ProjectLink
-                    id="YouTube"
-                    faClass="fa-youtube-play"
-                    link={this.props.youTubeLink}
-                  />
-                  <ProjectLink
-                    id="GitHub"
-                    faClass="fa-github"
-                    link={this.props.gitHubLink}
-                  />
-                  <ProjectLink
-                    id="YouTube"
-                    faClass="fa-external-link"
-                    link={this.props.externalLink}
-                  />
+                <div className="modal-footer-section">
+                  <div className="project-links-list">
+                    <ProjectLink
+                      id="Facebook"
+                      faClass="fa-facebook"
+                      link={this.props.facebookLink}
+                    />
+                    <ProjectLink
+                      id="Twitter"
+                      faClass="fa-twitter"
+                      link={this.props.twitterLink}
+                    />
+                    <ProjectLink
+                      id="YouTube"
+                      faClass="fa-youtube-play"
+                      link={this.props.youTubeLink}
+                    />
+                    <ProjectLink
+                      id="GitHub"
+                      faClass="fa-github"
+                      link={this.props.gitHubLink}
+                    />
+                    <ProjectLink
+                      id="YouTube"
+                      faClass="fa-external-link"
+                      link={this.props.externalLink}
+                    />
+                  </div>
                 </div>
-                <button
+                <div className="modal-footer-section">
+                  <div className="project-tech-list">{this.props.techList}</div>
+                </div>
+                {/* <button
                   type="button"
                   className="btn btn-default"
                   data-dismiss="modal"
                 >
                   Close
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
