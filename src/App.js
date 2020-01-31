@@ -74,7 +74,7 @@ function App() {
           <div className="experience-container">
             <div className="experience-description">
               I've been in the industry since the year 2000 as an intern while
-              studying Computer Science at Rutgers Universty. In recent years
+              studying Computer Science at Rutgers University. In recent years
               I've been doing freelance work, mainly in cross-platform mobile
               development using Unity and C#. I've also previously worked at
               major corporations such as Johnson &amp; Johnson and MetLife,
@@ -128,7 +128,7 @@ function App() {
                 Key Features include: Multi-track Recording Studio; Automatic
                 Key Detection; Interactive Virtual Guitar; Chord Progression
                 Generator; Style Based Suggestions for Progressions, Chords, and
-                Scales; Email based Colloboration with other JamSpring Users.
+                Scales; Email based Collaboration with other JamSpring Users.
               </p>
             </Project>
 
@@ -143,9 +143,9 @@ function App() {
             >
               <p>
                 Zasaword was an original word game for the iPhone which featured
-                several different games modes. In each mode, players create
-                words as quickly as possible from random letters which can also
-                be saved for later use.
+                several different game modes. In each mode, players create words
+                as quickly as possible from random letters which can also be
+                saved for later use.
               </p>
               <p>
                 I was the sole programmer, and collaborated on the UI design as
