@@ -206,6 +206,20 @@ function App() {
             </Project>
 
             <Project
+              id="PortfolioSite"
+              title="Portfolio Site"
+              imgSrc="/images/PortfolioSite.jpg"
+              imgAlt="Portfolio Site"
+              externalLink=""
+              techList="React, HTML, CSS"
+            >
+              <p>
+                I created my portfolio (this site) as an exercise in developing
+                with React and incorporating responsive design.
+              </p>
+            </Project>
+
+            <Project
               id="LostSoul"
               title="Ludum Dare 38:  Lost Soul"
               imgSrc="/images/LostSoul.jpg"
