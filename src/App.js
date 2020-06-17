@@ -2,6 +2,8 @@ import React from "react";
 import PortfolioSection from "./components/PortfolioSection";
 
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Project from "./components/Project";
 import SkillsGroup from "./components/SkillsGroup";
 
@@ -92,12 +94,13 @@ function App() {
               id="XenonMoon"
               title="Xenon Moon"
               imgSrc="/images/XenonMoon.jpg"
+              sliderSrc="/images/XenonMoon.jpg"
               imgAlt="Xenon Moon"
               facebookLink=""
               twitterLink=""
               youTubeLink=""
               gitHubLink=""
-              externalLink=""
+              externalLink="http://dailydigital.games/"
               techList="Unity, C#, Blender, Photoshop"
             >
               <p>

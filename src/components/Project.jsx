@@ -1,9 +1,22 @@
 import React, { Component } from "react";
 import ProjectLink from "./ProjectLink";
+import ProjectLinksList from "./ProjectLinksList";
+import Slider from "react-slick";
 
 class Project extends Component {
   render() {
+    var settings = {
+      dots: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    };
+
     let modalID = this.props.id + "Modal";
+    let imageSrcArray =
+      this.props.sliderSrc === "" || typeof this.props.sliderSrc === "undefined"
+        ? [this.props.imgSrc]
+        : this.props.sliderSrc.split(",");
 
     return (
       <div className="project-wrapper">
@@ -18,11 +31,22 @@ class Project extends Component {
         </div>
         <div className="project-container">
           <div className="project-title">{this.props.title}</div>
-          <div>
-            <img
-              className="project-image"
-              src={this.props.imgSrc}
-              alt={this.props.imgAlt}
+          <div className="project-image-container">
+            <div>
+              <img
+                className="project-image"
+                src={this.props.imgSrc}
+                alt={this.props.imgAlt}
+              />
+            </div>
+          </div>
+          <div className="project-footer">
+            <ProjectLinksList
+              facebookLink={this.props.facebookLink}
+              twitterLink={this.props.twitterLink}
+              youTubeLink={this.props.youTubeLink}
+              gitHubLink={this.props.gitHubLink}
+              externalLink={this.props.externalLink}
             />
           </div>
         </div>
@@ -38,43 +62,23 @@ class Project extends Component {
               </div>
               <div className="modal-body">
                 <div>
-                  <img
-                    className="project-image"
-                    src={this.props.imgSrc}
-                    alt={this.props.imgAlt}
-                  />
+                  <Slider {...settings}>
+                    {imageSrcArray.map((img) => (
+                      <img src={img} className="project-image"></img>
+                    ))}
+                  </Slider>
                 </div>
                 <div className="project-description">{this.props.children}</div>
               </div>
               <div className="modal-footer">
                 <div className="modal-footer-section">
-                  <div className="project-links-list">
-                    <ProjectLink
-                      id="Facebook"
-                      faClass="fa-facebook"
-                      link={this.props.facebookLink}
-                    />
-                    <ProjectLink
-                      id="Twitter"
-                      faClass="fa-twitter"
-                      link={this.props.twitterLink}
-                    />
-                    <ProjectLink
-                      id="YouTube"
-                      faClass="fa-youtube-play"
-                      link={this.props.youTubeLink}
-                    />
-                    <ProjectLink
-                      id="GitHub"
-                      faClass="fa-github"
-                      link={this.props.gitHubLink}
-                    />
-                    <ProjectLink
-                      id="YouTube"
-                      faClass="fa-external-link"
-                      link={this.props.externalLink}
-                    />
-                  </div>
+                  <ProjectLinksList
+                    facebookLink={this.props.facebookLink}
+                    twitterLink={this.props.twitterLink}
+                    youTubeLink={this.props.youTubeLink}
+                    gitHubLink={this.props.gitHubLink}
+                    externalLink={this.props.externalLink}
+                  />
                 </div>
                 <div className="modal-footer-section">
                   <div className="project-tech-list">{this.props.techList}</div>
