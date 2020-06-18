@@ -92,9 +92,17 @@ function App() {
           <div className="projects-group-container">
             <Project
               id="XenonMoon"
-              title="Xenon Moon"
-              imgSrc="/images/XenonMoon.jpg"
-              sliderSrc="/images/XenonMoon.jpg"
+              title="Xenon Moon (in development)"
+              imgSrc="/images/XenonMoon_predator_2.jpg"
+              sliderSrc="
+              /images/XenonMoon_predator_2.jpg,
+              /images/XenonMoon_roaming.jpg,
+              /images/XenonMoon_mastermind.jpg,
+              /images/XenonMoon_outpost.jpg,
+              /images/XenonMoon_service.jpg,
+              /images/XenonMoon_base.jpg,
+              /images/XenonMoon_episode_art.jpg
+              "
               imgAlt="Xenon Moon"
               facebookLink=""
               twitterLink=""
@@ -108,21 +116,22 @@ function App() {
                 several others (I'm the sole programmer). Some features include
                 procedural 3D world creation, 2D puzzles, craft upgrades, combat
                 with enemy AI, and an in-depth written story. It's planned for
-                release in early 2020.
+                release in Summer 2020.
               </p>
             </Project>
 
             <Project
               id="JamSpring"
               title="JamSpring"
-              imgSrc="/images/JamSpring.jpg"
+              imgSrc="/images/JamSpring_Virtual_Guitar.jpg"
+              sliderSrc="/images/JamSpring_Virtual_Guitar.jpg,/images/JamSpring_Multi_Track.jpg,/images/JamSpring_Chord_Progressions.jpg,/images/JamSpring_Mixer.jpg"
               imgAlt="JamSpring"
               facebookLink="https://www.facebook.com/JamSpringNetwork"
               youTubeLink="https://www.youtube.com/watch?v=A3bEDSrtLi4"
               techList="Unity, C#, Photoshop"
             >
               <p>
-                JamSpring was a guitar / music app I created with several others
+                JamSpring is a guitar / music app I created with several others
                 (I was the sole programmer). It automatically determines the key
                 of live music and connects users with a range of style-based
                 suggestions for the guitar.
@@ -138,30 +147,32 @@ function App() {
             <Project
               id="Zasaword"
               title="Zasaword"
-              imgSrc="/images/Zasaword.jpg"
+              imgSrc="/images/Zasaword_1.jpg"
+              sliderSrc="/images/Zasaword_1.jpg,/images/Zasaword_2.jpg,/images/Zasaword_3.jpg"
               imgAlt="Zasaword"
               youTubeLink="https://www.youtube.com/watch?v=NtImPglQvGY"
               externalLink="https://dantimus.itch.io/zasaword"
               techList="Objective C (Originally), Unity, C#, Photoshop"
             >
               <p>
-                Zasaword was an original word game for the iPhone which featured
-                several different game modes. In each mode, players create words
-                as quickly as possible from random letters which can also be
-                saved for later use.
+                Zasaword is an original word game in which players create words
+                as quickly as possible from random letters, while saving the
+                best letters for later use. It features several unique game
+                modes with different rules. One mode, for instance, requires
+                every word to be an exact number of letters.
               </p>
               <p>
                 I was the sole programmer, and collaborated on the UI design as
                 well.
               </p>
               <p>
-                An online demo version can be played &nbsp;
+                An online demo version can be played at &nbsp;
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://dantimus.itch.io/zasaword"
                 >
-                  here
+                  https://dantimus.itch.io/zasaword
                 </a>
                 .
               </p>
@@ -170,7 +181,8 @@ function App() {
             <Project
               id="MDSeries"
               title="Master Diagnostician Series"
-              imgSrc="/images/MD_Series.jpg"
+              imgSrc="/images/MD_Series_Anemia_1.jpg"
+              sliderSrc="/images/MD_Series_Anemia_1.jpg,/images/MD_Series_Anemia_2.jpg,/images/MD_Series_Kidney_1.jpg,/images/MD_Series_Kidney_2.jpg"
               imgAlt="Master Diagnostician Series"
               facebookLink="https://www.facebook.com/pages/category/Medical-Company/Beach-Rak-Medicine-LLC-202927129743831/"
               twitterLink=""
@@ -197,14 +209,14 @@ function App() {
               title="Lotus Bliss Yoga"
               imgSrc="/images/LotusBlissYoga.jpg"
               imgAlt="Lotus Bliss Yoga"
-              externalLink="http://lotusblissyoga.com/default.htm"
-              techList="HTML, CSS, Bootstrap, PHP"
+              externalLink="http://lotusblissyoga.com/"
+              techList="WordPress; Originally: HTML, CSS, Bootstrap, PHP"
             >
               <p>
                 I was hired to convert this website from an auto-generated HTML
                 mess to simple HTML / CSS. I also incorporated Bootstrap, made
                 it responsive, and created a new PHP contact form which uses
-                reCAPTCHA.
+                reCAPTCHA. I've since converted to the site to WordPress.
               </p>
             </Project>
 
@@ -225,7 +237,8 @@ function App() {
             <Project
               id="LostSoul"
               title="Ludum Dare 38:  Lost Soul"
-              imgSrc="/images/LostSoul.jpg"
+              imgSrc="/images/LostSoul_1.jpg"
+              sliderSrc="/images/LostSoul_1.jpg,/images/LostSoul_2.jpg,/images/LostSoul_3.jpg"
               imgAlt="Lost Soul"
               gitHubLink="https://github.com/drward4/LudumDare38"
               externalLink="https://ldjam.com/events/ludum-dare/38/lost-soul"
@@ -244,8 +257,8 @@ function App() {
                 &nbsp; competition. The theme for this event, which was my also
                 my first ever entry into Ludum Dare, was "A Small World". I went
                 with the idea of playing as a child's soul trapped in its
-                (former) bedroom, and possessing various toys in order to
-                escape.
+                (former) bedroom, and possessing various toys in order to solve
+                a simple puzzle and escape.
               </p>
               <p>
                 The game can be downloaded &nbsp;
@@ -263,7 +276,8 @@ function App() {
             <Project
               id="UntitledSong"
               title="Ludum Dare 45: Untitled Song"
-              imgSrc="/images/UntitledSong.jpg"
+              imgSrc="/images/UntitledSong_1.jpg"
+              sliderSrc="/images/UntitledSong_1.jpg,/images/UntitledSong_2.jpg,/images/UntitledSong_3.jpg,/images/UntitledSong_4.jpg"
               imgAlt="Ludum Dare 45: Untitled Song"
               gitHubLink="https://github.com/drward4/LudumDare45"
               externalLink="https://ldjam.com/events/ludum-dare/45/untitled-song"
@@ -285,13 +299,13 @@ function App() {
                 pieces of a new composition.
               </p>
               <p>
-                The game can be played &nbsp;
+                The game can be played at &nbsp;
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
                   href="https://dantimus.itch.io/untitled-song"
                 >
-                  here
+                  https://dantimus.itch.io/untitled-song
                 </a>
                 .
               </p>

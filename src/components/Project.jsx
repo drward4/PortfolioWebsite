@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ProjectLink from "./ProjectLink";
 import ProjectLinksList from "./ProjectLinksList";
 import Slider from "react-slick";
 
@@ -10,6 +9,7 @@ class Project extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      centerMode: true,
     };
 
     let modalID = this.props.id + "Modal";
@@ -61,10 +61,14 @@ class Project extends Component {
                 </button>
               </div>
               <div className="modal-body">
-                <div>
+                <div className="project-image-gallery">
                   <Slider {...settings}>
                     {imageSrcArray.map((img) => (
-                      <img src={img} className="project-image"></img>
+                      <img
+                        key={this.props.id}
+                        src={img}
+                        className="project-image"
+                      />
                     ))}
                   </Slider>
                 </div>
