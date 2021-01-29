@@ -6,6 +6,16 @@ class ProjectLinksList extends Component {
     return (
       <div className="project-links-list">
         <ProjectLink
+          id="AppStore"
+          faClass="fa-apple"
+          link={this.props.iOSLink}
+        />
+        <ProjectLink
+          id="GooglePlayStore"
+          faClass="fa-android"
+          link={this.props.iOSLink}
+        />
+        <ProjectLink
           id="Facebook"
           faClass="fa-facebook"
           link={this.props.facebookLink}

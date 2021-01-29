@@ -42,6 +42,7 @@ class Project extends Component {
           </div>
           <div className="project-footer">
             <ProjectLinksList
+              iOSLink={this.props.iOSLink}
               facebookLink={this.props.facebookLink}
               twitterLink={this.props.twitterLink}
               youTubeLink={this.props.youTubeLink}
@@ -77,6 +78,7 @@ class Project extends Component {
               <div className="modal-footer">
                 <div className="modal-footer-section">
                   <ProjectLinksList
+                    iOSLink={this.props.iOSLink}
                     facebookLink={this.props.facebookLink}
                     twitterLink={this.props.twitterLink}
                     youTubeLink={this.props.youTubeLink}

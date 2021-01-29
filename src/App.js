@@ -75,12 +75,12 @@ function App() {
         <PortfolioSection id="ExperienceSection" title="EXPERIENCE">
           <div className="experience-container">
             <div className="experience-description">
-              I've been in the industry since the year 2000 as an intern while
-              studying Computer Science at Rutgers University. In recent years
-              I've been doing freelance work, mainly in cross-platform mobile
-              development using Unity and C#. I've also previously worked at
-              major corporations such as Johnson &amp; Johnson and MetLife,
-              mainly creating internal applications with ASP.Net and SQL.
+              I've been in the industry since the year 2000 and have worked with
+              a broad range of technologies in a variety of fields. In recent
+              years I've mainly been developing cross-platform mobile games and
+              applications using Unity and C#. I've also previously worked at
+              several major corporations creating internal web applications with
+              ASP.Net and SQL.
             </div>
             <div>
               <h4>TECHNOLOGIES I'VE WORKED WITH:</h4>
@@ -92,7 +92,7 @@ function App() {
           <div className="projects-group-container">
             <Project
               id="XenonMoon"
-              title="Xenon Moon (in development)"
+              title="Xenon Moon"
               imgSrc="/images/XenonMoon_predator_2.jpg"
               sliderSrc="
               /images/XenonMoon_predator_2.jpg,
@@ -104,19 +104,20 @@ function App() {
               /images/XenonMoon_episode_art.jpg
               "
               imgAlt="Xenon Moon"
+              iOSLink="https://apps.apple.com/ie/app/xenon-moon/id1491049830"
+              goolePlayLink="https://play.google.com/store/apps/details?id=media.dailydigitallimited.xenonmoon"
               facebookLink=""
               twitterLink=""
-              youTubeLink=""
+              youTubeLink="https://www.youtube.com/channel/UCg42Ahq3sGFyws47iPFtHwQ"
               gitHubLink=""
               externalLink="http://dailydigital.games/"
               techList="Unity, C#, Blender, Photoshop"
             >
               <p>
-                Xenon Moon is a 3D action / exploration game I'm creating with
-                several others (I'm the sole programmer). Some features include
-                procedural 3D world creation, 2D puzzles, craft upgrades, combat
-                with enemy AI, and an in-depth written story. It's planned for
-                release in Summer 2020.
+                Xenon Moon is a 3D action / exploration game I created with
+                several others (I'm was the sole programmer). Some features
+                include procedural 3D world creation, 2D puzzles, craft
+                upgrades, combat with enemy AI, and an in-depth written story.
               </p>
             </Project>
 
